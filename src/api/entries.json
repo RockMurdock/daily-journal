@@ -1,0 +1,25 @@
+{
+    "entries": [
+        {
+            "id": 1,
+            "date": "01/07/2020",
+            "concept": "Styling with CSS Selectors",
+            "entry": "Learned how to style html pages using CSS",
+            "mood": "Excited"
+        },
+        {
+            "id": 2,
+            "date": "01/08/2020",
+            "concept": "How to Research Code",
+            "entry": "Today I learned efficient ways to research code to solve problems in my coding",
+            "mood": "Excited"
+        },
+        {
+            "id": 3,
+            "date": "01/09/2020",
+            "concept": "Basic HTML Layout with Flexbox",
+            "entry": "Today I learned the wondrous power of flexbox command",
+            "mood": "Happy"
+        }
+    ]
+}
