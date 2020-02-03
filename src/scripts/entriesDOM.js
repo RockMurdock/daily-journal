@@ -1,3 +1,4 @@
+import entryComponent from "/scripts/entryComponent.js"
 const journalContainer = document.querySelector(".entryLog");
 /*
     Purpose: To render all journal entries to the DOM
@@ -18,3 +19,4 @@ const entriesDOM = {
         }
     }
 }
+export default entriesDOM
