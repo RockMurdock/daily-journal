@@ -15,7 +15,7 @@
 }
 */
 
-const entryComponent = {
+/*const entryComponent = {
     makeJournalEntryComponent(journalEntry) {
         // Create your own HTML structure for a journal entry
         return `
@@ -25,5 +25,12 @@ const entryComponent = {
             </div>
     `
     }
-}
-export default entryComponent
+}*/
+
+const createJournalEntry = entry => `
+    <div class="container">
+        <h3>${entry.concept}</h3>
+        <p>${entry.entry}<br>${entry.date}</p>
+</div>
+`
+export default createJournalEntry
