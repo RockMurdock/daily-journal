@@ -5,21 +5,56 @@
       "date": "01/07/2020",
       "concept": "Styling with CSS Selectors",
       "entry": "Learned how to style html pages using CSS",
-      "mood": "Excited"
+      "mood": "excited"
     },
     {
       "id": 2,
       "date": "01/08/2020",
       "concept": "How to Research Code",
       "entry": "Today I learned efficient ways to research code to solve problems in my coding",
-      "mood": "Excited"
+      "mood": "excited"
     },
     {
       "id": 3,
       "date": "01/09/2020",
       "concept": "Basic HTML Layout with Flexbox",
       "entry": "Today I learned the wondrous power of flexbox command",
-      "mood": "Happy"
+      "mood": "happy"
+    },
+    {
+      "date": "2020-02-06",
+      "concept": "jhg",
+      "entry": "jh",
+      "mood": "happy",
+      "id": 4
+    },
+    {
+      "date": "2020-02-06",
+      "concept": "jhg",
+      "entry": "jh",
+      "mood": "meh",
+      "id": 5
+    },
+    {
+      "date": "2020-02-06",
+      "concept": "jhg",
+      "entry": "jh",
+      "mood": "sad",
+      "id": 6
+    },
+    {
+      "date": "2020-02-06",
+      "concept": "jhg",
+      "entry": "jh",
+      "mood": "stressed",
+      "id": 7
+    },
+    {
+      "date": "2020-02-06",
+      "concept": "jhg",
+      "entry": "jh",
+      "mood": "kitty",
+      "id": 8
     }
   ]
 }
