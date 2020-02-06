@@ -8,4 +8,4 @@ import eventManager from "/scripts/journalAddEvents.js"
 API.getJournalEntries().then(renderJournalEntries)
 eventManager.addRecordEntryEventListener()
 eventManager.addRadioButtonEventListener()
-
+eventManager.journalDeleteEventListener()

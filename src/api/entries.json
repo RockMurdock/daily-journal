@@ -22,37 +22,30 @@
       "mood": "happy"
     },
     {
-      "date": "2020-02-06",
-      "concept": "jhg",
-      "entry": "jh",
-      "mood": "happy",
-      "id": 4
-    },
-    {
-      "date": "2020-02-06",
-      "concept": "jhg",
-      "entry": "jh",
+      "date": "2020-02-11",
+      "concept": "meh",
+      "entry": "meh",
       "mood": "meh",
       "id": 5
     },
     {
-      "date": "2020-02-06",
-      "concept": "jhg",
-      "entry": "jh",
+      "date": "2020-02-11",
+      "concept": "sad",
+      "entry": "sad",
       "mood": "sad",
       "id": 6
     },
     {
-      "date": "2020-02-06",
-      "concept": "jhg",
-      "entry": "jh",
+      "date": "2020-02-11",
+      "concept": "stressed",
+      "entry": "stressed",
       "mood": "stressed",
       "id": 7
     },
     {
-      "date": "2020-02-06",
-      "concept": "jhg",
-      "entry": "jh",
+      "date": "2020-02-11",
+      "concept": "kitty",
+      "entry": "kitty",
       "mood": "kitty",
       "id": 8
     }

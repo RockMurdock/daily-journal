@@ -1,6 +1,8 @@
 import API from "/scripts/data.js";
 import renderJournalEntries from "/scripts/entriesDOM.js";
 
+const entryLog = document.querySelector(".entryLog")
+
 const eventManager = {
   addRecordEntryEventListener() {
     const button = document.querySelector(".journalButton");
@@ -148,6 +150,19 @@ const eventManager = {
         }
       });
     });
+  },
+  journalDeleteEventListener() {
+    entryLog.addEventListener("click", (event) => {
+
+        if(event.target.id.startsWith("deleteBtn--")){
+
+            const entryIdToDelete = event.target.id.split("--")[1]
+
+            API.deleteJournalEntry(entryIdToDelete).then(() => {
+                API.getJournalEntries().then(renderJournalEntries)
+              })
+        }
+    })
   }
 };
 export default eventManager;

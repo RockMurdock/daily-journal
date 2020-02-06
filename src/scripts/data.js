@@ -1,18 +1,22 @@
-
+const journalUrl = "http://localhost:3000"
 
 const API = {
     getJournalEntries() {
-        const journalUrl = "http://localhost:3000/entries"
-        return fetch(journalUrl)
+        return fetch(`${journalUrl}/entries`)
             .then(response => response.json())
     },
     addJournalEntry(entry) {
-        return fetch("http://localhost:3000/entries", {
+        return fetch(`${journalUrl}/entries`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(entry)
+        })
+    },
+    deleteJournalEntry(entryId) {
+        return fetch(`${journalUrl}/entries/${entryId}`, {
+            method:"DELETE"
         })
     }
 }
