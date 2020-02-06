@@ -5,21 +5,6 @@ const journalContainer = document.querySelector(".entryLog");
 
     Arguments: entries (array of objects)
 */
-/*const renderJournalEntries = (entries) => {
-    for (let i = 0; i < entries.length; i++) {
-        journalContainer.innerHTML += makeJournalEntryComponent(entries[i]);
-    }
-};
-*/
-
-/*const entriesDOM = {
-    renderJournalEntries(entries) {
-        for (let i = 0; i < entries.length; i++) {
-            journalContainer.innerHTML += entryComponent.makeJournalEntryComponent(entries[i]);
-        }
-    }
-}*/
-
 const renderJournalEntries = entries => {
     journalContainer.textContent = ""
 
