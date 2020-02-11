@@ -1,5 +1,6 @@
 import API from "/scripts/data.js";
 import renderJournalEntries from "/scripts/entriesDOM.js";
+import createJournalEntry from "/scripts/entryComponent.js";
 
 const entryLog = document.querySelector(".entryLog");
 
@@ -206,6 +207,29 @@ const eventManager = {
       } else if (event.target.id.startsWith("editBtn--")) {
         const entryToEdit = event.target.id.split("--")[1];
         updateFormFields(entryToEdit);
+      }
+    });
+  },
+  addSearchEntryEventListener() {
+    const search = document.getElementById("search");
+
+    search.addEventListener("keypress", event => {
+      if (event.keyCode === 13) {
+        const searchCriteria = search.value;
+        const searchResultPromise = API.getJournalEntries();
+        const journalContainer = document.querySelector(".entryLog");
+        journalContainer.innerHTML = "";
+        searchResultPromise.then(object => {
+          object.forEach(entry => {
+            for (const value of Object.values(entry)) {
+              const string = JSON.stringify(value);
+              const entryCard = createJournalEntry(entry);
+              if (string.includes(`${searchCriteria}`)) {
+               return journalContainer.innerHTML += entryCard;
+              }
+            }
+          });
+        });
       }
     });
   }
