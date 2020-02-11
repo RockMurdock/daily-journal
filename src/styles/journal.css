@@ -1,4 +1,14 @@
 fieldset {
     display: flex;
-    flex-direction: column;
+}
+#moodBox {
+    width: 40%;
+}
+#searchBox {
+    width: 40%;
+}
+#filterSearch{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
